@@ -69,3 +69,23 @@ p:first-child {
 p:last-child {
   margin-bottom: 0;
 }
+
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.alert-info {
+  background-color: #cce5ff;
+  border-color: #b8daff;
+  color: #004085;
+}
+
+.alert-secondary {
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+  color: #383d41;
+  margin-bottom: 1rem;
+}

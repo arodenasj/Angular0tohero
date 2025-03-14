@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
          <li><a routerLink="/binding">Binding Examples</a></li>
          <li><a routerLink="/events">Event Listeners</a></li>
          <li><a routerLink="/control-flow">Control Flow</a></li>
+         <li><a routerLink="/content-projection">Content Projection</a></li>
        </ul>
      </nav>
    `,

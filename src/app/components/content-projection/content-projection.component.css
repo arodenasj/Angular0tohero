@@ -1,0 +1,235 @@
+.profile-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+}
+
+.skills {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: var(--nav-background);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+}
+
+.profile-button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.stat-card {
+  background: var(--nav-background);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: var(--nav-background);
+  border-radius: 4px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.price-card {
+  background: var(--nav-background);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.price {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.tab-section {
+  padding: 1rem;
+}
+
+.config-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: var(--nav-background);
+  margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.accordion-title {
+  font-weight: 500;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech-list li {
+  background: var(--nav-background);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+
+button.secondary {
+  background: var(--nav-background);
+  color: var(--text-color);
+}
+
+button.primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Estilos para las pestañas */
+.project-info, .settings-grid, .stats-dashboard, .team-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.info-card, .settings-group {
+  background: var(--nav-background);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.version-info {
+  text-align: center;
+}
+
+.version {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.update-date {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.settings-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.stats-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-box {
+  background: var(--nav-background);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-trend {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.stat-trend.positive {
+  color: #2ecc71;
+}
+
+.stat-trend.negative {
+  color: #e74c3c;
+}
+
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-member {
+  background: var(--nav-background);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.member-skills {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}

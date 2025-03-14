@@ -1,9 +1,3 @@
-.event-examples {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .interaction-area {
   padding: 1rem;
   border: 1px solid var(--border-color);
@@ -28,39 +22,4 @@
   margin: 1rem;
   background-color: var(--hover-color);
   cursor: pointer;
-}
-
-form {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-input {
-  padding: 0.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: 3px;
-  flex: 1;
-}
-
-.example-card {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 3px;
-  border: 1px solid var(--border-color);
-  margin: 1rem 0;
-}
-
-.alert {
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: 3px;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.alert-info {
-  background-color: var(--hover-color);
-  border: 1px solid var(--primary-color);
-  color: var(--text-color);
 }

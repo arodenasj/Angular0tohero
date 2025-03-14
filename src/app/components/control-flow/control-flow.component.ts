@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   template: `
-    <div class="control-flow-examples">
+    <div class="component-container">
       <h2>Control Flow Examples</h2>
 
       <section class="example-card">

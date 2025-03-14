@@ -6,7 +6,7 @@ import { NgIf } from '@angular/common';
   standalone: true,
   imports: [NgIf],
   template: `
-    <div class="event-examples">
+    <div class="component-container">
       <h2>Event Listener Examples</h2>
 
       <section class="example-card">
@@ -21,8 +21,7 @@ import { NgIf } from '@angular/common';
           <p>Mouse over this area</p>
           <p>Hover status: {{ isHovered ? 'Hovering' : 'Not hovering' }}</p>
           <button (click)="handleClick($event)">Click me</button>
-          <p *ngIf="clickInfo">Click position: X: {{ clickInfo?.x }}, Y: {{ clickInfo?.y }}</p>
-        </div>
+          <p *ngIf="clickInfo">Click position: X: {{ clickInfo.x }}, Y: {{ clickInfo.y }}</p></div>
       </section>
 
       <section class="example-card">
