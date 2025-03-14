@@ -18,10 +18,10 @@ Clone and run the project:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/angular-concepts.git
+git clone https://github.com/arodenasj/Angular0tohero.git
 
 # Navigate to project directory
-cd angular-concepts
+cd Angular0tohero
 
 # Install dependencies
 npm install
