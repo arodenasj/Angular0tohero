@@ -166,3 +166,13 @@ select {
   border-radius: 3px;
   font-size: 1rem;
 }
+
+.tooltip {
+  position: fixed;
+  background: var(--text-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 100;
+}

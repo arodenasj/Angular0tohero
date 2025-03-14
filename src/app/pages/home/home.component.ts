@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
          <li><a routerLink="/events">Event Listeners</a></li>
          <li><a routerLink="/control-flow">Control Flow</a></li>
          <li><a routerLink="/content-projection">Content Projection</a></li>
+         <li><a routerLink="/directives">Directives</a></li>
        </ul>
      </nav>
    `,

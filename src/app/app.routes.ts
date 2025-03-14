@@ -6,6 +6,7 @@ import {BindingComponent} from './components/binding/binding.component';
 import {EventListenerComponent} from './components/event-listener/event-listener.component';
 import {ControlFlowComponent} from './components/control-flow/control-flow.component';
 import {ContentProjectionComponent} from './components/content-projection/content-projection.component';
+import {DirectivesComponent} from './components/directives/directives.component';
 
 export const routes: Routes = [
   {
@@ -42,5 +43,10 @@ export const routes: Routes = [
     path: 'content-projection',
     component: ContentProjectionComponent,
     title: 'Content Projection - Angular Concepts'
+  },
+  {
+    path: 'directives',
+    component: DirectivesComponent,
+    title: 'Directives - Angular Concepts'
   }
 ];
