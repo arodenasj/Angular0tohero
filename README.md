@@ -19,6 +19,7 @@ Clone and run the project:
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/angular-concepts.git
+```
 
 # Navigate to project directory
 cd angular-concepts
