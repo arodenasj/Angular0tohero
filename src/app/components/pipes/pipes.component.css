@@ -1,0 +1,71 @@
+div {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+p {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  margin: 1rem 0;
+}
+
+.pipes-examples {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.example-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  margin: 1rem 0;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.pipe-group {
+  background-color: var(--nav-background);
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+p {
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  margin: 0.5rem 0;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
