@@ -7,6 +7,7 @@ import {EventListenerComponent} from './components/event-listener/event-listener
 import {ControlFlowComponent} from './components/control-flow/control-flow.component';
 import {ContentProjectionComponent} from './components/content-projection/content-projection.component';
 import {DirectivesComponent} from './components/directives/directives.component';
+import {FormsComponent} from './components/forms/forms.component';
 
 export const routes: Routes = [
   {
@@ -48,5 +49,10 @@ export const routes: Routes = [
     path: 'directives',
     component: DirectivesComponent,
     title: 'Directives - Angular Concepts'
+  },
+  {
+    path: 'forms',
+    component: FormsComponent,
+    title: 'Forms - Angular Concepts'
   }
 ];

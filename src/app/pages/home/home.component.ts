@@ -15,6 +15,7 @@ import { Component } from '@angular/core';
          <li><a routerLink="/control-flow">Control Flow</a></li>
          <li><a routerLink="/content-projection">Content Projection</a></li>
          <li><a routerLink="/directives">Directives</a></li>
+         <li><a routerLink="/forms">Forms</a></li>
        </ul>
      </nav>
    `,

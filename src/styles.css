@@ -176,3 +176,20 @@ select {
   font-size: 14px;
   z-index: 100;
 }
+
+.error {
+  color: #dc3545;
+  font-size: 0.875em;
+}
+
+input.ng-invalid.ng-touched {
+  border-color: #dc3545;
+}
+
+input.ng-valid.ng-touched {
+  border-color: #28a745;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}

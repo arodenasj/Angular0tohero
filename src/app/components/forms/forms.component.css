@@ -1,0 +1,140 @@
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Labels */
+label {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+/* Inputs */
+input {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: white;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:hover {
+  border-color: var(--secondary-color);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--hover-color);
+}
+
+/* Address Group */
+[formGroupName="address"] {
+  background-color: var(--nav-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+  margin-top: 0.5rem;
+}
+
+[formGroupName="address"] h4 {
+  margin: 0 0 1.25rem 0;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  align-self: flex-start;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: var(--secondary-color);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:disabled {
+  background-color: var(--border-color);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Validation States */
+input.ng-invalid.ng-touched {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+  box-shadow: none;
+}
+
+input.ng-valid.ng-touched {
+  border-color: #28a745;
+  background-color: #f0fff4;
+}
+
+/* Error Messages */
+.error {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* Form Response */
+.alert {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  animation: fadeIn 0.3s ease;
+}
+
+.alert-info {
+  background-color: var(--hover-color);
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
