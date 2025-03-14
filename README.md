@@ -1,5 +1,3 @@
-Here is your text formatted in markdown for a GitHub README:
-
 # 🅰️ Angular Concepts Explorer
 
 An interactive guide showcasing Angular fundamentals and best practices through practical examples.
