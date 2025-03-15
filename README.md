@@ -2,6 +2,8 @@
 
 An interactive guide showcasing Angular fundamentals and best practices through practical examples.
 
+[Netlify](https://angular-0-to-hero.netlify.app/)
+
 ## 📌 Overview
 
 This project serves as a comprehensive learning resource for Angular developers, featuring:
