@@ -2,7 +2,7 @@
 
 An interactive guide showcasing Angular fundamentals and best practices through practical examples.
 
-[Netlify](https://angular-0-to-hero.netlify.app/)
+[Go to Netlify](https://angular-0-to-hero.netlify.app/)
 
 ## 📌 Overview
 
