@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-can-activate-child',
-  imports: [],
+  standalone: true,
   template: `
-    <p>
-      can-activate-child works!
-    </p>
+    <div class="example-card">
+      <h3>CanActivateChild Guard Demo</h3>
+      <p>Este contenido está protegido por el guard CanActivateChild.</p>
+    </div>
   `,
-  styleUrl: './can-activate-child.component.css'
+  styleUrls: ['./can-activate-child.component.css']
 })
-export class CanActivateChildComponent {
-
-}
+export class CanActivateChildComponent {}

@@ -1,0 +1,10 @@
+.resolve-explanation {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--nav-background);
+  border-radius: 4px;
+}
+
+.resolve-explanation h3 {
+  margin-bottom: 1rem;
+}

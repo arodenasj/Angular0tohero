@@ -23,6 +23,7 @@
 .guards-nav {
   margin-bottom: 1.5rem; /* Aumentado el margen */
 }
+
 .guards-nav a.btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -88,9 +89,9 @@
 @media (max-width: 768px) {
   .guards-container {
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 1rem; /* Aumentado el padding */
     gap: 1rem;
-    width: 100%; /* Asegurando que ocupe todo el ancho en móviles */
+    width: 100%;
     margin: 0;
   }
 
@@ -102,29 +103,35 @@
   .guards-content {
     width: 100%;
     margin-top: 1rem;
+    padding: 1rem; /* Aumentado el padding */
   }
 
   .example-card {
-    padding: 1rem;
+    padding: 1.5rem; /* Aumentado el padding */
   }
 
   .code-example {
-    padding: 0.5rem;
+    padding: 0.75rem; /* Aumentado el padding */
     font-size: 0.9rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem; /* Aumentado el tamaño de la fuente */
     margin-bottom: 1rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Aumentado el tamaño de la fuente */
   }
 
   .guards-nav {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
+  }
+
+  .demo-btn {
+    padding: 1rem 2rem; /* Aumentado el padding */
+    font-size: 1.1rem; /* Aumentado el tamaño de la fuente */
   }
 }
