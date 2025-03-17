@@ -3,7 +3,6 @@ import {Router, RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-guards',
-  standalone: true,
   imports: [RouterLink, RouterOutlet],
   template: `
     <div class="guards-container">
