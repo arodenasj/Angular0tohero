@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { ContentModule } from './content/content.module';
+import {ContentModule} from './content/content.module';
 
 @Component({
   selector: 'app-content-projection',

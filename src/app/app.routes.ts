@@ -8,6 +8,16 @@ import {ControlFlowComponent} from './components/control-flow/control-flow.compo
 import {ContentProjectionComponent} from './components/content-projection/content-projection.component';
 import {DirectivesComponent} from './components/directives/directives.component';
 import {FormsComponent} from './components/forms/forms.component';
+import {ErrorComponent} from './pages/error/error.component';
+import {AboutComponent} from './pages/about/about.component';
+import {GuardsComponent} from './components/guards/guards.component';
+import {inject} from '@angular/core';
+import {LoginComponent} from './components/guards/login/login.component';
+import {AuthService} from './auth/auth.service';
+import { CanActivateComponent } from './components/guards/can-activate/can-activate.component';
+import {CanDeactivateComponent} from './components/guards/can-deactivate/can-deactivate.component';
+import {CanActivateChildComponent} from './components/guards/can-activate-child/can-activate-child.component';
+import {ResolveComponent} from './components/guards/resolve/resolve.component';
 
 export const routes: Routes = [
   {
@@ -54,5 +64,19 @@ export const routes: Routes = [
     path: 'forms',
     component: FormsComponent,
     title: 'Forms - Angular Concepts'
+  },
+  {
+    path: 'guards',
+    loadChildren: () => import('./components/guards/guards.module').then(m => m.GuardsModule)
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    title: 'Sobre Nosotros - Angular Concepts'
+  },
+  {
+    path: '**',
+    component: ErrorComponent,
+    title: 'Error 404 - Angular Concepts'
   }
 ];

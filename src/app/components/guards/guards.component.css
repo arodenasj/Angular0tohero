@@ -1,0 +1,115 @@
+.guards-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem; /* Aumentado el padding */
+  width: 90%; /* Usando un porcentaje para ocupar más espacio */
+  max-width: 1600px; /* Aumentado el ancho máximo */
+  margin: 2rem auto; /* Centrando el contenedor */
+}
+
+.guards-sidebar {
+  flex: 0 0 35%; /* Ajustado el flex-basis */
+  /* max-width: 700px; */ /* Eliminado el ancho máximo fijo */
+}
+
+.guards-content {
+  flex: 1;
+  padding: 2rem; /* Aumentado el padding */
+  background-color: var(--nav-background);
+  border-radius: 4px;
+  min-height: 500px; /* Aumentado el min-height */
+}
+
+.guards-nav {
+  margin-bottom: 1.5rem; /* Aumentado el margen */
+}
+
+.example-card {
+  background-color: white;
+  padding: 2rem; /* Aumentado el padding */
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.5rem; /* Aumentado el margen */
+}
+
+.guard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Aumentado el gap */
+}
+
+.code-example {
+  background-color: var(--nav-background);
+  padding: 1rem; /* Aumentado el padding */
+  border-radius: 4px;
+  margin: 0.75rem 0; /* Aumentado el margen */
+}
+
+.code-example code {
+  color: var(--primary-color);
+  font-family: monospace;
+  word-break: break-word;
+  font-size: 1rem; /* Aumentado el tamaño de la fuente */
+}
+
+.demo-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem; /* Aumentado el padding */
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s;
+  width: fit-content;
+  font-size: 1rem; /* Aumentado el tamaño de la fuente */
+}
+
+.demo-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .guards-container {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+    width: 100%; /* Asegurando que ocupe todo el ancho en móviles */
+    margin: 0;
+  }
+
+  .guards-sidebar {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .guards-content {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .example-card {
+    padding: 1rem;
+  }
+
+  .code-example {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .guards-nav {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+}
