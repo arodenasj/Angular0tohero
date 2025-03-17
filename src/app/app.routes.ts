@@ -18,6 +18,7 @@ import { CanActivateComponent } from './components/guards/can-activate/can-activ
 import {CanDeactivateComponent} from './components/guards/can-deactivate/can-deactivate.component';
 import {CanActivateChildComponent} from './components/guards/can-activate-child/can-activate-child.component';
 import {ResolveComponent} from './components/guards/resolve/resolve.component';
+import {InterceptorsComponent} from './components/interceptors/interceptors.component';
 
 export const routes: Routes = [
   {
@@ -75,8 +76,13 @@ export const routes: Routes = [
     title: 'Sobre Nosotros - Angular Concepts'
   },
   {
+    path: 'interceptors',
+    component: InterceptorsComponent,
+    title: 'Interceptors - Angular Concepts'
+  },
+  {
     path: '**',
     component: ErrorComponent,
     title: 'Error 404 - Angular Concepts'
-  }
+  },
 ];
