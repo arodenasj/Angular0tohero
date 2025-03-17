@@ -23,6 +23,21 @@
 .guards-nav {
   margin-bottom: 1.5rem; /* Aumentado el margen */
 }
+.guards-nav a.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.guards-nav a.btn:hover {
+  background-color: var(--secondary-color);
+}
 
 .example-card {
   background-color: white;

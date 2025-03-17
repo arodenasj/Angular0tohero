@@ -25,7 +25,7 @@ import {Router, RouterLink, RouterOutlet} from '@angular/router';
                   <li>Redirecciona a login si no cumple condiciones</li>
                 </ul>
                 <div class="code-example">
-                  <code>canActivate: [() =&gt; inject(AuthService).isAuthenticated()]</code>
+                  <code>canActivate: [() => inject(AuthService).isAuthenticated()]</code>
                 </div>
               </div>
               <a routerLink="./canactivate" class="demo-btn">Ver Demostración</a>
@@ -43,7 +43,7 @@ import {Router, RouterLink, RouterOutlet} from '@angular/router';
                   <li>Valida estado de formularios</li>
                 </ul>
                 <div class="code-example">
-                  <code>canDeactivate: [(component) =&gt; component.canExit()]</code>
+                  <code>canDeactivate: [(component) => component.canExit()]</code>
                 </div>
               </div>
               <a routerLink="./candeactivate" class="demo-btn">Ver Demostración</a>
@@ -61,7 +61,7 @@ import {Router, RouterLink, RouterOutlet} from '@angular/router';
                   <li>Control jerárquico de acceso</li>
                 </ul>
                 <div class="code-example">
-                  <code>canActivateChild: [() =&gt; checkChildAccess()]</code>
+                  <code>canActivateChild: [() => checkChildAccess()]</code>
                 </div>
               </div>
               <a routerLink="./canactivatechild" class="demo-btn">Ver Demostración</a>
@@ -79,10 +79,49 @@ import {Router, RouterLink, RouterOutlet} from '@angular/router';
                   <li>Previene vistas incompletas</li>
                 </ul>
                 <div class="code-example">
-                  <code>resolve: {{ '{' }} data: () =&gt; inject(DataService).getData() {{ '}' }}</code>
+                  <code>resolve: {{ '{' }} data: () => inject(DataService).getData() {{ '}' }}</code>
                 </div>
               </div>
               <a routerLink="./resolve" class="demo-btn">Ver Demostración</a>
+            </div>
+          </div>
+
+          <div class="example-card">
+            <h3>Explicación de Guards</h3>
+            <div class="guard-content">
+              <div class="guard-description">
+                <p>
+                  Los Guards en Angular son una característica poderosa que te permite controlar el acceso a ciertas
+                  rutas en tu aplicación.
+                  Puedes usarlos para proteger rutas basadas en la autenticación del usuario, permisos específicos o
+                  cualquier otra condición que necesites.
+                </p>
+                <p>
+                  Los Guards se ejecutan antes de que se active una ruta, lo que te permite decidir si el usuario tiene
+                  permiso para acceder a ella o no.
+                  Si el Guard devuelve \`true\`, la ruta se activa. Si devuelve \`false\`, la ruta se cancela y el
+                  usuario puede ser redirigido a otra página.
+                </p>
+                <p>
+                  Existen varios tipos de Guards en Angular, cada uno con un propósito específico:
+                </p>
+                <ul>
+                  <li>
+                    <strong>CanActivate:</strong> Protege rutas y decide si un usuario puede acceder a ellas.
+                  </li>
+                  <li>
+                    <strong>CanDeactivate:</strong> Decide si un usuario puede salir de una ruta, permitiendo la
+                    confirmación antes de la navegación.
+                  </li>
+                  <li>
+                    <strong>CanActivateChild:</strong> Protege rutas hijas y decide si un usuario puede acceder a ellas.
+                  </li>
+                  <li>
+                    <strong>Resolve:</strong> Pre-carga datos antes de que se active una ruta, asegurando que los datos
+                    estén disponibles cuando se cargue el componente.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
