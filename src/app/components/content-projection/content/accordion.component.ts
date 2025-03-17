@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-accordion',
-  standalone: true,
+  standalone: false,
   template: `
     <div class="accordion">
       <div class="header" (click)="toggleContent()">

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-panel',
-  standalone: true,
+  standalone: false,
   template: `
     <div class="panel">
       <div class="panel-header">

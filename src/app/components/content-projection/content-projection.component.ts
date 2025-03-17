@@ -1,18 +1,9 @@
 import {Component} from '@angular/core';
-import {CardComponent} from './card.component';
-import {PanelComponent} from './panel.component';
-import {TabComponent} from './tab.component';
-import {AccordionComponent} from './accordion.component';
+import { ContentModule } from './content/content.module';
 
 @Component({
   selector: 'app-content-projection',
-  standalone: true,
-  imports: [
-    CardComponent,
-    PanelComponent,
-    TabComponent,
-    AccordionComponent
-  ],
+  imports: [ContentModule],
   template: `
     <div class="component-container">
       <h2>Proyección de Contenido con ng-content</h2>
