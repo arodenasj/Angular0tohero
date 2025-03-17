@@ -1,4 +1,5 @@
 :root {
+  /* Existing variables */
   --primary-color: #0052CC;
   --secondary-color: #0065FF;
   --text-color: #172B4D;
@@ -6,6 +7,13 @@
   --nav-background: #F4F5F7;
   --border-color: #DFE1E6;
   --hover-color: #DEEBFF;
+
+  --error-color: #dc3545;
+  --primary-rgb: 0, 82, 204;
+  --success-color: #28a745;
+  --focus-shadow-rgb: 13, 110, 253;
+  --input-disabled-bg: #e9ecef;
+  --input-placeholder-color: #6c757d;
 }
 
 /* Estilos base */
@@ -151,45 +159,4 @@ button, .status-select {
 
 button:hover {
   background-color: var(--secondary-color);
-}
-
-/* Formularios */
-form {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-select {
-  padding: 0.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: 3px;
-  font-size: 1rem;
-}
-
-.tooltip {
-  position: fixed;
-  background: var(--text-color);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 14px;
-  z-index: 100;
-}
-
-.error {
-  color: #dc3545;
-  font-size: 0.875em;
-}
-
-input.ng-invalid.ng-touched {
-  border-color: #dc3545;
-}
-
-input.ng-valid.ng-touched {
-  border-color: #28a745;
-}
-
-.input-group {
-  margin-bottom: 1rem;
 }
