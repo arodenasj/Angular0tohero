@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
        <ul>
          <li><a routerLink="/pipes">Pipes Examples</a></li>
          <li><a routerLink="/inputs">Input Examples</a></li>
+         <li><a routerLink="/outputs">Output Examples</a></li>
          <li><a routerLink="/binding">Binding Examples</a></li>
          <li><a routerLink="/events">Event Listeners</a></li>
          <li><a routerLink="/control-flow">Control Flow</a></li>

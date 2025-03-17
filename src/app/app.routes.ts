@@ -19,6 +19,7 @@ import {CanDeactivateComponent} from './components/guards/can-deactivate/can-dea
 import {CanActivateChildComponent} from './components/guards/can-activate-child/can-activate-child.component';
 import {ResolveComponent} from './components/guards/resolve/resolve.component';
 import {InterceptorsComponent} from './components/interceptors/interceptors.component';
+import {OutputComponent} from './components/output/output.component';
 
 export const routes: Routes = [
   {
@@ -74,6 +75,11 @@ export const routes: Routes = [
     path: 'about',
     component: AboutComponent,
     title: 'Sobre Nosotros - Angular Concepts'
+  },
+  {
+    path: 'outputs',
+    component: OutputComponent,
+    title: 'Output Examples - Angular Concepts'
   },
   {
     path: 'interceptors',
