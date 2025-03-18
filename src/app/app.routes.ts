@@ -61,10 +61,6 @@ export const routes: Routes = [
     title: 'Forms - Angular Concepts'
   },
   {
-    path: 'guards',
-    loadChildren: () => import('./components/guards/guards.module').then(m => m.GuardsModule)
-  },
-  {
     path: 'about',
     component: AboutComponent,
     title: 'Sobre Nosotros - Angular Concepts'

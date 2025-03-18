@@ -16,7 +16,15 @@ interface Todo {
   template: `
     <div class="component-container">
       <h2>Database & API Connection</h2>
-      <section class="example-card">
+      <section class="example-card" *ngIf="!loggedIn">
+        <h3>Login</h3>
+        <div class="input-group">
+          <input type="text" [(ngModel)]="username" placeholder="Username">
+          <input type="password" [(ngModel)]="password" placeholder="Password">
+          <button (click)="login()">Login</button>
+        </div>
+      </section>
+      <section class="example-card" *ngIf="loggedIn">
         <h3>Lista de Tareas</h3>
         <div class="input-group">
           <input type="text" [(ngModel)]="newTodo" placeholder="Nueva tarea">
@@ -32,14 +40,31 @@ interface Todo {
 export class DatabaseComponent implements OnInit {
   todos: Todo[] = [];
   newTodo: string = '';
+  username: string = '';
+  password: string = '';
+  loggedIn: boolean = false;
 
   constructor(private supabaseService: SupabaseService) {}
 
   async ngOnInit() {
-    try {
-      this.todos = await this.supabaseService.getTodos();
-    } catch (e) {
-      console.error('Error loading todos:', e);
+    if (this.loggedIn) {
+      try {
+        this.todos = await this.supabaseService.getTodos();
+      } catch (e) {
+        console.error('Error loading todos:', e);
+      }
+    }
+  }
+
+  async login() {
+    if (this.username && this.password) {
+      try {
+        // Implement your login logic here
+        this.loggedIn = true;
+        this.todos = await this.supabaseService.getTodos();
+      } catch (e) {
+        console.error('Login failed:', e);
+      }
     }
   }
 
