@@ -19,6 +19,7 @@ import { Component } from '@angular/core';
          <li><a routerLink="/forms">Forms</a></li>
          <li><a routerLink="/guards">Guards</a></li>
          <li><a routerLink="/interceptors">Interceptors</a></li>
+         <li><a routerLink="/database">Database & API</a></li>
        </ul>
      </nav>
    `,
