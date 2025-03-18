@@ -15,6 +15,9 @@ import { Injectable } from '@angular/core';
       private supabase: SupabaseClient;
 
       constructor() {
+        if (!environment.supabaseUrl || !environment.supabaseKey) {
+          throw new Error('Supabase URL or Key is not defined');
+        }
         this.supabase = createClient(
           environment.supabaseUrl,
           environment.supabaseKey

@@ -1,7 +1,3 @@
-import * as dotenv from 'dotenv';
-
-dotenv.config();
-
 export const environment = {
   production: false,
   supabaseUrl: process.env['SUPABASE_URL'],
