@@ -15,6 +15,9 @@ export class DatabaseService {
   private pool: Pool;
 
   constructor() {
+    if (!environment.supabaseUrl) {
+      throw new Error('SUPABASE_URL is not defined');
+    }
     const dbUrl = new URL(environment.supabaseUrl);
     const host = dbUrl.hostname;
 
