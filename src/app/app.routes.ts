@@ -13,11 +13,13 @@ import {OutputComponent} from './components/output/output.component';
 import {InterceptorsComponent} from './components/interceptors/interceptors.component';
 import {GuardsComponent} from './components/guards/guards.component';
 import {ErrorComponent} from './pages/error/error.component';
-import { LoginComponent } from './components/guards/login/login.component';
+import {LoginComponent} from './components/guards/login/login.component';
 import {CanActivateComponent} from './components/guards/can-activate/can-activate.component';
 import {CanDeactivateComponent} from './components/guards/can-deactivate/can-deactivate.component';
 import {CanActivateChildComponent} from './components/guards/can-activate-child/can-activate-child.component';
 import {canActivateChildGuard} from './components/guards/can-activate-child/can-activate-child.guard';
+import {ResolveComponent} from './components/guards/resolve/resolve.component';
+import {dataResolver} from './auth/data-resolver.service';
 
 export const routes: Routes = [
   {path: '', component: HomeComponent, title: 'Home - Angular Concepts'},
@@ -37,13 +39,20 @@ export const routes: Routes = [
     component: GuardsComponent,
     title: 'Guards - Angular Concepts',
     children: [
-      { path: 'login', component: LoginComponent },
-      { path: 'canactivate', component: CanActivateComponent },
-      { path: 'candeactivate', component: CanDeactivateComponent },
+      {path: 'login', component: LoginComponent},
+      {path: 'canactivate', component: CanActivateComponent},
+      {path: 'candeactivate', component: CanDeactivateComponent},
       {
         path: 'canactivatechild',
         component: CanActivateChildComponent,
         canActivateChild: [canActivateChildGuard]
+      },
+      {
+        path: 'resolve',
+        component: ResolveComponent,
+        resolve: {
+          resolvedData: dataResolver
+        }
       }
     ]
   },
