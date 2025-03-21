@@ -1,13 +1,14 @@
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { delay } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {Observable, of} from 'rxjs';
+import {delay} from 'rxjs/operators';
+import {ResolveData} from '../models/resolve-data.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  getData(): Observable<any> {
-    const resolveData = {
+  getData(): Observable<ResolveData> {
+    const resolveData: ResolveData = {
       title: 'Resolve Guard Example',
       explanation: {
         what: 'El Resolve Guard es un mecanismo de Angular que pre-carga datos antes de activar una ruta',
@@ -31,7 +32,6 @@ export class DataService {
       loadTime: '1 segundo (simulado)'
     };
 
-    // Simulating API delay
     return of(resolveData).pipe(delay(1000));
   }
 }
