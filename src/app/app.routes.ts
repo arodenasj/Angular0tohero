@@ -12,7 +12,7 @@ import {ErrorComponent} from './pages/error/error.component';
 import {AboutComponent} from './pages/about/about.component';
 import {InterceptorsComponent} from './components/interceptors/interceptors.component';
 import {OutputComponent} from './components/output/output.component';
-import {DatabaseComponent} from './components/database/database.component';
+import {GuardsComponent} from './components/guards/guards.component';
 
 export const routes: Routes = [
   {
@@ -76,9 +76,9 @@ export const routes: Routes = [
     title: 'Interceptors - Angular Concepts'
   },
   {
-    path: 'database',
-    component: DatabaseComponent,
-    title: 'Database Examples - Angular Concepts'
+    path: 'guards',
+    component: GuardsComponent,
+    title: 'Guards - Angular Concepts'
   },
   {
     path: '**',
